@@ -1,0 +1,8 @@
+  {
+      "showVideo" : false,
+      "showImage": true,
+      "videoUrl": "assets/video/LP-VIDEO-1.mp4",
+      "imageUrl": "assets/images/LP_BALE_1920x1080_003.jpg",
+      "imageUrlMobile": "assets/images/LP_BALE_750x1624_003.jpg",
+      "italyCountryCode": "CB41"
+  }
