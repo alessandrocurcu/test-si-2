@@ -1,0 +1,6 @@
+  {
+      "showVideo" : true,
+      "showImage": false,
+      "videoUrl": "assets/video/LP-VIDEO.mp4",
+      "imageUrl": "assets/images/LP-IMAGE.jpg"
+  }
