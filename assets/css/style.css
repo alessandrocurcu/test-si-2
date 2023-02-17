@@ -42,6 +42,10 @@ body {
   background-color: inherit;
 }
 
+*:focus {
+  outline: none !important;
+}
+
 /* ------------------------------------------------------- PROJECT */
 
 .lp-line{
@@ -179,6 +183,29 @@ body {
 {
   width: 45%;
   text-align: center;
+  position: relative;
+}
+.parent {
+  background: gray;
+  height: 200px;
+  width: 200px;
+  
+}
+
+.lp-tabbed-internal-sx
+{
+  /*padding: 80px 80px;*/
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  margin: -50px 0 0 -50px;
+}
+
+.child {
+  background: orange;
+  width: 100px;
+  height: 100px;
+  
 }
 
 .lp-tabbed-dx
@@ -190,10 +217,6 @@ body {
   justify-content: space-around;
 }
 
-.lp-tabbed-internal-center
-{
-  padding: 80px 80px;
-}
 
 .lp-tabbed-internal-box
 {
@@ -232,6 +255,84 @@ body {
   width: 27px;
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
+}
+
+.lg-input 
+{
+  border: 0px;
+  background-color: transparent;
+  width: 100%;
+  border-bottom: 1px solid var(--baseColor);
+  color: var(--baseColor);
+  font: normal normal normal 22px/30px EBGaramond;
+}
+
+.lg-button 
+{
+  border: 0px !important;
+  position: relative;
+  right: 0;
+  float: right;
+  top: -32px;
+  background-color: transparent;
+}
+
+@media (max-width: 767.99px) /*Mobile TABBED*/ {
+ 
+  .lp-tabbed
+  {
+    display: block;
+  }
+
+  .lp-tabbed-sx
+  {
+    width: 100%;
+    padding: 0px 40px;
+  }
+
+  .lp-tabbed-internal-sx
+  {
+    padding: 30px 30px;
+    top: 0px;
+    left: 0px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .lp-tabbed-dx
+  {
+    width: 100%;
+    padding: 0px 30px;
+  }
+
+  .lp-tabbed .title-big-red 
+  {
+    font-size: 1.5em !important;
+    line-height: 0px;
+  }
+
+  .lp-tabbed .title-big-red-italic
+  {
+    font-size: 1.5em !important;
+    line-height: 0px;
+  }
+
+  .lp-tabbed .title-normal-red
+  {
+    font-size: 1.2em !important;
+    line-height: 0px;
+  }
+
+  .lp-tabbed .title-normal
+  {
+    font-size: 1.1em !important;
+  }
+
+  .lp-tabbed .title-normal-line
+  {
+    font-size: 0.9em !important;
+  }
+
 }
 
 /* ------------------------------------------------------- MATERIAL OVERRIDE */
